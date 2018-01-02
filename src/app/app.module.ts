@@ -1,3 +1,5 @@
+import { ReviewsModule } from './reviews/reviews.module';
+import { ErrModule } from './err/err.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { LoginModule } from './login/login.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,7 +18,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     LoginModule,
-    DashboardModule
+    DashboardModule,
+    ErrModule,
+    ReviewsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

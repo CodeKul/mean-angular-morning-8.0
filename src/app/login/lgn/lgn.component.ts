@@ -16,6 +16,6 @@ export class LgnComponent implements OnInit {
   }
 
   onLogin(usNm: string, pass: string) {
-   this.router.navigate(['dash'])   
+   this.router.navigate(['dash', usNm])   
   }
 }
