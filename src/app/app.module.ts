@@ -1,3 +1,4 @@
+import { DashGuard } from './dashboard/dash.guard';
 import { ReviewsModule } from './reviews/reviews.module';
 import { ErrModule } from './err/err.module';
 import { DashboardModule } from './dashboard/dashboard.module';
@@ -22,7 +23,7 @@ import { AppComponent } from './app.component';
     ErrModule,
     ReviewsModule
   ],
-  providers: [],
+  providers: [DashGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

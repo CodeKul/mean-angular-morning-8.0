@@ -9,13 +9,19 @@ import { Router } from '@angular/router';
 export class LgnComponent implements OnInit {
 
   constructor(
-    private router : Router
+    private router: Router
   ) { }
 
   ngOnInit() {
   }
 
   onLogin(usNm: string, pass: string) {
-   this.router.navigate(['dash', usNm])   
+    this.router.navigate(['dash', usNm], {
+      queryParams: {
+        id: 1234,
+        page: 1,
+        cnt: 50
+      }
+    })
   }
 }

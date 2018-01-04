@@ -24,6 +24,10 @@ export class DashComponent implements OnInit {
       console.log(prms)
       this.dashNm = prms['usNm']
     })
+
+    this.actRt.queryParams.subscribe(prm => {
+      this.dashNm  += prm['id']
+    });
   }
 
   go(nm: string) {

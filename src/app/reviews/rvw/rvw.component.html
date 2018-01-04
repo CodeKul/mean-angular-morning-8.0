@@ -1,3 +1,12 @@
+<div class="jumbotron">
+  <input placeholder="Num1" type="text" #num1>
+  <input placeholder="Operation" type="text" #operation>
+  <input placeholder="Num2" type="text" #num2>
+  <input type="button" value="Calculate" (click)="onCalc(num1.value, operation.value, num2.value)">
+
+  <p>Result of operation is {{rs?.res}}</p>
+</div>
+
 <div class="jumbotron" *ngFor="let rv of rvws">
   <div class="col-md-12">
     <p>Stars {{rv.strs}}</p>
